@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "authenticationapp/base.html" %}
+{% block body_block %}
+<div class="jumbotron">
+	<div class="container">
+		<h2>Signup to enjoy the facilities from study online</h2>
+		<form method="POST">
+			{{form.as_p}}
+			{% csrf_token %}
+			<input type="submit" name="" value="submit">			
+		</form>	
+	</div>
+</div>
+{% endblock body_block %}

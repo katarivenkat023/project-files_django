@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Add persons</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/addperson.css" %}">
+	<style type="text/css">
+		body{
+			background-image: url('https://wallpapercave.com/wp/wp4011367.jpg');
+	
+			 background-repeat: no-repeat; 
+ background-size: 100% 300%; 
+		}
+		div{
+	
+			color: orange;
+			font-size: 20px;
+		}
+		a{
+			color: white;
+		}
+
+	</style>
+</head>
+<body><br><br><br>
+<div align="center">
+	<form method="POST">
+		<h1><u>Enter Cricketer details</u></h1>
+		{{form.as_p}}
+		{% csrf_token %}
+		<input type="submit" name="">
+						<a class="btn btn-secondary btn-lg" href="/homepage/" role="button">home Page</a><br>
+		
+	</form>
+</div>
+</body>
+</html>

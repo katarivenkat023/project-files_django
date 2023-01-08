@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>movies list</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/movielist.css" %}">
+	<style type="text/css">
+		table {
+  				width: 80%;
+  				text-align: center;
+  				background-color: cyan;
+				}
+
+			th {
+ 				 height: 50px;
+				}
+				body{
+					background-color: orange;
+				}
+				a{
+					font-size: 25px;
+				}
+	</style>
+</head>
+<body ><br><br><br><div align="center" >
+	{% if movie_data %}
+		<h1><u><b>Movie Information</b></u></h1>
+			<table border="1">
+				<tr>
+					<th>Releasedate</th>
+					<th>Moviename</th>
+					<th>Hero</th>
+					<th>Heroine</th>
+					<th>Rating</th>	
+				</tr>
+				{% for movie in movie_data  %}
+					<tr>
+						<td>{{ movie.releasedate }}</td>
+						<td>{{ movie.moviename }}</td>
+						<td>{{ movie.hero }}</td>
+						<td>{{ movie.heroine }}</td>
+						<td>{{ movie.rating }}</td>
+					</tr>
+				{% endfor %}
+			</table>
+	{% else %}
+		<h1>no data to diplay</h1>
+	{% endif %}<br><br><br>
+	<a class="btn btn-secondary btn-lg" href="/homepage/" role="button">home Page</a>
+</div>
+</body>
+</html>

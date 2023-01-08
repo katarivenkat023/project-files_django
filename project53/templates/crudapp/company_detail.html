@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+	{% block body_block %}
+			<h1>Company Name: {{ company.name }} </h1>
+			<h2>Location: {{ company.location }}</h2>
+			<h2>Name of CEO: {{ company.ceo }}</h2>
+			<a href="/update/{{ company.id }}" class="btn btn-lg btn-warning">Update Company Information</a>
+			&nbsp&nbsp&nbsp
+			<a href="/delete/{{ company.id }}" class="btn btn-lg btn-danger">Delete Company Information</a>
+			&nbsp&nbsp&nbsp
+			<a href="/display/" class="btn btn-lg btn-success">List of companys</a>
+	{% endblock body_block %}

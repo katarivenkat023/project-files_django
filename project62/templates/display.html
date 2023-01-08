@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Model Manager</title>
+</head>
+<body>
+	<div align="center">
+	<h1>Employee Information</h1>
+	<table border="2">
+		<tr>
+			<th>Employee Number</th>
+			<th>Employee Name</th>
+			<th>Employee Salary</th>
+			<th>Employee Address</th>
+		</tr>
+		{% for e in emp %}
+			<tr>
+				<td>{{ e.eno }}</td>
+				<td>{{ e.ename }}</td>
+				<td>{{ e.esalary }}</td>
+				<td>{{ e.eaddress }}</td>
+			
+			</tr>
+			
+		{% endfor %}
+		
+	</table>
+</div>
+</body>
+</html>

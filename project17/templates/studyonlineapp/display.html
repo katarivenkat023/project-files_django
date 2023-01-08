@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Student Details</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/display.css" %}">
+</head>
+<body>
+
+	<h1><u>Student Details</u></h1>
+	{% if student_data %}
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>DOB</th>
+					<th>Study Online ID</th>
+					<th>Mail Id</th>
+					<th>Phone Number</th>
+					<th>Branch</th>
+				</tr>
+			</thead>
+			{% for data  in student_data  %}
+				<tr>
+					<td>{{data.name}}</td>
+					<td>{{data.dob}}</td>
+					<td>{{data.studyonline_id}}</td>
+					<td>{{data.mail_id}}</td>
+					<td>{{data.phone_number}}</td>
+					<td>{{data.branch}}</td>
+				</tr>
+				
+			{% endfor %}
+		</table>
+	{% else %}
+		
+	{% endif %}
+
+</body>
+</html>

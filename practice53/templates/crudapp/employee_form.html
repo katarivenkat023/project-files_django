@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+{% block body_block %}<br><br>
+<div class="jumbotron" align="center" style="background-color:yellow">
+  <div class="container">
+
+	<form method="POST">
+		<h4>Employee Insert/Update Form</h4><br>
+		{{form.as_p}}
+		{% csrf_token %}
+		<input type="submit" name="" value="Insert/update deails" class="btn btn-sm btn-success">
+	</form>
+</div>
+</div>
+	
+{% endblock body_block %}

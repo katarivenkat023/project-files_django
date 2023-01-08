@@ -1,0 +1,22 @@
+marquee{
+	color: black;
+	background-color:red;
+	margin: 1px;
+}
+#center{
+	color: white;
+	background-color: black;
+	text-align: center;
+	padding: 20px;
+}
+#body{
+	background-color: orange;
+}
+#div{
+	background-color: black;
+	color: orange;
+}
+#h1{
+	color: black;
+	background-color: white;
+}

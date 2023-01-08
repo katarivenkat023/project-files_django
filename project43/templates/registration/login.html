@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "authenticationapp/base.html" %}
+{% block body_block %}
+<div class="jumbotron">
+	<div class="container">
+		<form method="POST">
+			<h2>Login To view the Course</h2>
+			{{form.as_p}}
+			{% csrf_token %}
+			<button type="submit">Login</button>			
+		</form>	
+	</div>
+</div>
+{% endblock body_block %}

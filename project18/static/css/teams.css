@@ -1,0 +1,25 @@
+.container .jumbotron{
+	
+}
+h3{
+	color: orange;
+
+
+}
+th{
+	color: orange;
+	width: 150px;
+	height: 100px;
+	background-color: cyan;
+}
+td{
+	padding: 10px
+	
+}
+table{
+	text-align: center;
+}
+body {
+ background-image: url("iplteam.jpg");
+
+}

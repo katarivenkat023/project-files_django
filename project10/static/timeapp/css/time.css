@@ -1,0 +1,12 @@
+h1{
+	color: black;
+	background-color: orange;
+}
+h2{
+	color: orange;
+	background-color: black;
+}
+body{
+	text-align: center;
+	background-color: purple;
+}

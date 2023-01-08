@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>custome filters</title>
+
+</head>
+<body>
+<div>
+	<h1><u>Employee Details</u></h1>
+	{% load customfilter %}
+	{% for d  in data %}
+		<ul>
+			<li>{{d.emp_id}}</li>
+			<li>{{d.ename|slicing2}}</li>
+			<li>{{d.age}}</li>
+			<li>{{d.address|slicing1}}</li>
+			<li>{{d.technology|slicing3}}</li>
+		</ul><hr>		
+	{% endfor %}
+</div>
+</body>
+</html>

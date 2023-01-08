@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cbv </title>
+</head>
+<body>
+<h1>Book Information</h1>
+<ul>
+	{% for b in book_list %}
+		<li>Book title : {{ b.title }}</li>
+		<li>Book author : {{ b.author }}</li>
+		<li>Book pages : {{ b.pages }}</li>
+		<li>Book price : {{ b.price }}</li>
+		<br>
+	{% endfor %}
+</ul>	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>rcb details</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/rr.css" %}">
+	<style type="text/css">
+		body{
+			background-image: url('https://static.toiimg.com/img/72891720/Master.jpg');
+			background-repeat: no-repeat;
+			background-size: 1000px 700px;
+			background-position: center;
+			background-color: #D2691E;
+			background-position: right;
+			padding-left: 50px;
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1><u><b>Rayal Challengers Bangalore Team</b></u></h1>
+	<td><a class="btn btn-success btn-md" href="/teams/" >Home  Page</a></td>
+	{% if rcb_data %}
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>=
+					<th>Country</th>
+				</tr>
+			</thead>
+			{% for data  in rcb_data  %}
+				<tr>
+					<td>{{data.name}}</td>
+					<td>{{data.country}}</td>
+				</tr>
+				
+			{% endfor %}
+		</table>
+	{% else %}
+		<h2>No Data Available</h2>
+	{% endif %}
+</body>
+</html>

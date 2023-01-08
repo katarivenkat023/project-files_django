@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>age page</title>
+		<style type="text/css">
+		body{
+			background-color: orange;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h1>Age Registration Form</h1>
+	<form action="/gf/">
+		{{form}}
+		{% csrf_token %}
+		<input type="submit" name="" value="submit age">
+	</form>
+</div>
+</body>
+</html>

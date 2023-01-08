@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>lower page</title>
+	<style type="text/css">
+		body{
+			background-color: lightpink;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body><br><br><br><br><br>
+<div align="center">
+	<h1><u>Student Details</u></h1>
+	{% for d  in data %}
+	<ul>
+		<tr>
+			<td>Name : {{d.name|lower}}</td><br>
+			<td>Age : {{d.age}}</td><br>
+			<td>Address: {{d.address|lower}}</td><br>
+			<td>Joining date : {{d.joining_date|date:"d-m-yy"}}</td><br>
+		</tr>
+	</ul>
+		
+	{% endfor %}
+</div>
+</body>
+</html>

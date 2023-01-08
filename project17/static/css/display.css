@@ -1,0 +1,22 @@
+body{
+	background-color: #FFDEAD;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 1000%;
+	
+
+}
+h1{
+	 color: #D2691E;
+	 font-size: 40px;
+	 
+}
+table{
+	border-color:#B8860B;
+	color: #800000;
+
+	
+}
+tr{
+	padding: 10px;
+}

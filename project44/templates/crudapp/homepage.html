@@ -1,0 +1,21 @@
+{% extends "crudapp/base.html" %}
+{% block body_block %}
+<style type="text/css">
+	body{
+		background-color: orange;
+	}
+</style>
+<br><br>
+	<h1><u>Study online</u></h1><br>
+	<h3>Employee Details</h3><br><br>
+	<div>
+	<table style="border: 1px solid black">
+		<thead>
+			<tr>
+				<a href="/create/" class="btn btn-success">Insert New Employee</a>
+				<a href="/display/" class="btn btn-secondary">Display Employee Details</a>
+			</tr>
+			</thead>
+	</table>
+	</div>
+{% endblock body_block %}

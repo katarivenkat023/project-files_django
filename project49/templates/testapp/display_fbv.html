@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fbv</title>
+</head>
+<body>
+<h1>Book information</h1>
+{% for b in book  %}
+Book title : {{ b.title }}<br>
+Book author : {{ b.author }}<br>
+book pages : {{ b.pages }}<br>
+book price : {{ b.price }} <br>
+	<br>
+{% endfor %}
+</body>
+</html>

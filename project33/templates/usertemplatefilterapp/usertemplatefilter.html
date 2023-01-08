@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Defined Template</title>
+	<style type="text/css">
+		body{
+			background-color: orange;
+		}
+		ul{
+			background-color: cyan;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Student Details</h1>
+		{% load customfilter %}
+
+		{% for d in data  %}
+			<ul>
+				<li>{{ d.name|title }}</li>
+				<li>{{ d.technology|slicing1 }}</li>
+				<li>{{ d.trainer|slicing2:4 }}</li>	
+			</ul>
+			<br><br><hr>
+		{% endfor %}
+
+</body>
+</html>

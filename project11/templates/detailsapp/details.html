@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Student Details</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="{% static "detailsapp/css/details.css" %}">
+</head>
+</head>
+<body>
+<div  align=center id="div" >
+	<h1><u><b>Student Details</b></u></h1>
+</div>
+<div  class="container">
+  <div id="a" class="jumbotron">
+    <img id=img1 src="{% static "detailsapp/image/logo.jpg" %}">
+	<h3><b>Student Name : {{name}} </h3>
+	<h3><b>Roll No : {{roll_no}}</b></h3>
+	<h3><b>College Name : {{ college}}</b></h3>
+	<h3><b>Year Of Passing : {{year_of_passing}}</b></h3>
+	<h3><b>Percentage : {{Percentage}}</b></h3>
+
+</div><br>
+<div class="container" >
+  <div class="jumbotron">
+  	<img id=img src="{% static "detailsapp/image/degree.jpg" %}">
+</div>
+</div>
+</body>
+</html>

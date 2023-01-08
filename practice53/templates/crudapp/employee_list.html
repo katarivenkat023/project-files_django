@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+{% block body_block %}<br><br><br><br>
+<div class="jumbotron" align="center" style="background-color:yellow">
+  <div class="container">
+	<h3>List of all the Employees</h3>
+	
+	{% for employee in employee_list  %}
+		<h5><a href="/{{ employee.id }}">{{ employee.ename }}</a></h5>		
+	{% endfor %}
+
+	<a href="/create/" class="btn btn-sm btn-primary">Add new Employee</a>
+
+	<a href="/homepage/" class="btn btn-sm btn-primary">Home page</a>
+  </div>
+</div>
+	
+{% endblock body_block %}

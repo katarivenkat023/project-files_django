@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "bookmyshowapp/base.html" %}
+
+{% block body_block %}<br><br>
+
+<div align="center"> 
+	<h1>Movie Updation Form</h1><br>
+
+	<form method="POST">
+
+		
+
+		Movie Name: <input type="text" name="moviename" value="{{ movie.moviename }}"><br>
+		Hero: <input type="text" name="hero" value="{{ movie.hero }}"><br>
+		Heroine: <input type="text" name="heroine" value="{{ movie.heroine }}"><br>
+		Release date: <input type="date" name="releasedate" value="{{ movie.releasedate }}"><br>
+		Rating: <input type="number" name="rating" value="{{ movie.rating }}"><br>
+		Timing: <input type="time" name="timing" value="{{ movie.timing }}"><br>
+		Director: <input type="text" name="director" value="{{ movie.director }}"><br>
+		Language: <input type="text" name="language" value="{{ movie.language }}"><br>
+		{% csrf_token %}
+		<input type="submit" name="" value="Update Record" class="btn btn-warning">
+			
+	</form>
+</div>
+{% endblock body_block %}

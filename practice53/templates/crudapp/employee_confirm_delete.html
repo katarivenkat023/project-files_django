@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+	{% block body_block %}<br><br><br><br>
+	<div class="jumbotron" align="center" style="background-color:yellow">
+  <div class="container">
+		<h1>Are you sure you want to delete {{ employee.ename }}!!!!</h1><br>
+		<form method="POST">
+			{% csrf_token %}
+			<input type="submit" class="btn btn-sm btn-danger" value="Delete Record">&nbsp&nbsp
+			<a href="/{{ employee.id }}" class="btn btn-sm btn-success">Cancel</a>
+		</form>
+	</div>
+</div>
+	{% endblock body_block %}

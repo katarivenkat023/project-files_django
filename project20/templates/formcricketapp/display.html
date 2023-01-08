@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>cricket display</title>
+	<link rel="stylesheet" type="text/css" href="{% static "formcricketapp/css/display.css" %}">
+</head>
+<body>
+
+<div>
+	<h1><u>MS Dhoni Records In TEST</u></h1>
+<form method="POST">
+	{{form.as_p}}
+	{% csrf_token %}
+	<input type="submit" name="">
+	
+</form>
+<img src="{% static "formcricketapp/image/dhoni.jpg" %}">
+</div>
+</body>
+</html>

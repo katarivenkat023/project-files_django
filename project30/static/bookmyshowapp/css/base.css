@@ -1,0 +1,17 @@
+body{
+	background-image: url(https://www.dqindia.com/wp-content/uploads/2016/12/BMYSHOW.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 300%;
+}
+h1 ,h4{
+	color: orange;
+}
+#navbarNav{
+	color: white;
+	background-color: orange;
+	padding: 10px;
+	margin: 0px;
+}
+#navbar-brand{
+	background-color: #8B0000;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result page</title>
+	<style type="text/css">
+		body{
+			background-color: orange;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div>
+	{% if request.session %}
+	<h1>Thank you for providing Your information... Plz confirm once</h1>
+	<ul>
+		{% for key,value in request.session.items  %}
+		<li><h1>{{key|upper}} : {{value}}</h1></li>
+			
+		{% endfor %}
+		
+	</ul>
+	{% else %}
+	<p> No information Available </p>
+	{% endif %}
+</div>
+</body>
+</html>

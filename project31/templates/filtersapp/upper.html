@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>upper page</title>
+	<style type="text/css">
+		body{
+			background-color: cyan;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body><br><br><br><br><br>
+<div align="center">
+	<h1><u>Studnet Details</u></h1>
+	{% for d  in data %}
+	<ul>
+		<tr>
+			<td>Name : {{d.name|upper}}</td><br>
+			<td>Age : {{d.age}}</td><br>
+			<td>Address: {{d.address|upper}}</td><br>
+			<td>Joining date : {{d.joining_date|timesince}}</td><br>
+		</tr>
+	</ul>
+		
+	{% endfor %}
+</div>
+</body>
+</html>

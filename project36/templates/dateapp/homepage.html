@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomePage</title>
+	<style type="text/css">
+		body{
+			background-color: cyan;
+		}
+	</style>
+</head>
+<body >
+	<div align="center">
+	<h1><u> Welcome to Study online </u></h1>
+	<form action="/collectcookie/">
+		{{ form }}
+		{% csrf_token %}
+		<input type="submit" name="" value="Submit your name">
+	</form>
+</div>
+</body>
+</html>

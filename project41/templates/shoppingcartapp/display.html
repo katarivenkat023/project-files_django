@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>display cart items</title>
+	<style type="text/css">
+		table{
+
+			padding: 2px;
+			text-align: center;
+			height: 15px;
+			width: 500px;
+
+
+		}
+	</style>
+</head>
+<body style="background-color:lightpink"><br><br><br><br><br>
+
+	<div align="center">
+<h1>Total cart information</h1>
+{% if request.session %}
+<table border="1">
+	<thead>
+		<th>Name </th>
+		<th>Quantity</th>
+	</thead>
+	{% for key,value in request.session.items %}
+		<tr>
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+		</tr>
+	{% endfor %}
+</table>
+	
+{% else %}
+	<h1>Empty Cart</h1>
+{% endif %}
+	</div>
+
+</body>
+</html>

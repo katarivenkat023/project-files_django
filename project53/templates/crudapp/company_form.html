@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+	{% block body_block %}
+		<h1>Company Data Creation/Updation Form</h1><hr>
+
+		<form method="POST">
+			{{ form.as_p }}
+			{% csrf_token %}
+			<input type="submit" class="btn btn-lg btn-primary" name="" value="Insert/Update Company Data">
+			
+		</form>
+	    
+	{% endblock body_block %}

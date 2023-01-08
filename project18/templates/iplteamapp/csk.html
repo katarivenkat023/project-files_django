@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>csk details</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/csk.css" %}">
+	<style type="">
+		body{
+			background-image: url('https://static.toiimg.com/img/72891673/Master.jpg');
+			background-repeat: no-repeat;
+			background-size: 1100px 700px;
+			background-position: center;
+			background-color: #FFF8DC;
+			background-position: right;
+			padding-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1><u><b>Chennai Super Kings Team</b></u></h1>
+	<td><a class="btn btn-primary btn-md" href="/teams/" >Home  Page</a></td>
+	{% if csk_data %}
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>=
+					<th>Country</th>
+				</tr>
+			</thead>
+			{% for data  in csk_data  %}
+				<tr>
+					<td>{{data.name}}</td>
+					<td>{{data.country}}</td>
+				</tr>
+				
+			{% endfor %}
+		</table>
+	{% else %}
+		
+	{% endif %}
+</body>
+</html>

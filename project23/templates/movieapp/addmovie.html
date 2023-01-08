@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>addmovie</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/addmovie.css" %}">
+	<style type="text/css">
+		body{
+			background-color: orange;
+			font-size: 20px;
+		}
+		input{
+  		border: 2px solid red;
+  		border-radius: 4px;
+  		background-color: #3CBC8D;
+  		color: black;
+  		padding: 15px 20px;
+
+}
+	</style>
+</head>
+<body>
+	<div class="container" align="center"><br><br><br>
+		<h1><u><i>Enter Movie Details</i></u></h1>
+		<form method="POST">
+			{{ movie_form.as_p }}
+			{% csrf_token %}
+			<input type="submit" value="Add Movie">
+			<a class="btn btn-secondary btn-lg" href="/homepage/" role="button">home Page</a>			
+		</form><br><br>
+		
+	</div>
+</body>
+</html>

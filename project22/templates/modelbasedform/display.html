@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>display student data</title>
+	<style type="text/css">
+		body{
+			background-color: cyan;
+		}
+	</style>
+</head>
+<body><br><br><br><br>
+<div class='container' align="center">
+	<h1><u>Enter the Student Details</u></h1>
+	<form method="POST">
+		{{form.as_p}}
+		{% csrf_token %}
+		<input type="submit" name="">		
+	</form>
+</div>
+</body>
+</html>

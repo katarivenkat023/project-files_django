@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register page</title>
+	<style type="text/css">
+		body{
+			background-color: orange;
+		}
+	</style>
+
+</head>
+<body>
+<div align="center">
+	<form method="POST">
+		<h1>Enter Employee Details</h1>
+		{{form.as_p}}
+		{% csrf_token %}
+		<input type="submit" name=""><br><br>
+		<a href="/homepage/">Home Page</a><br>
+	</form>
+</div>
+</body>
+</html>

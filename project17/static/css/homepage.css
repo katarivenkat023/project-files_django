@@ -1,0 +1,12 @@
+body{
+	background-color: #7FFFD4;
+}
+marquee{
+	color: black;
+	background-color:yellow;
+	font-size: 20px;
+}
+.container .jumbotron{
+	background-color: black;
+	color: orange; 
+}

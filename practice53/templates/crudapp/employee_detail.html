@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+{% block body_block %}<br><br><br>
+<div class="jumbotron" align="center" style="background-color:yellow">
+  <div class="container">
+	<h1><u>Employees Details</u></h1><br>
+	
+		<ul>
+			<li>Employee Id : {{ employee.eid }}</li>
+			<li>Employee name : {{ employee.ename }}</li>
+			<li>Employee Email : {{ employee.email }}</li>
+			<li>Employee Phone Number : {{ employee.ephone_number }}</li>
+			<li>Employee Salary : {{ employee.esalary }}</li>
+			<li>Employee address : {{ employee.eaddress }}</li> 	
+		</ul>	
+	
+	<a href="/update/{{employee.id}}" class="btn btn-sm btn-primary">Update Employeee Details <a>
+		&nbsp&nbsp
+	<a href="/delete/{{employee.id}}" class="btn btn-sm btn-primary">Delete Employeee Details <a>
+		&nbsp&nbsp
+	<a href="/create/" class="btn btn-sm btn-primary">Add new Employee</a>
+		&nbsp&nbsp
+	<a href="/display/" class="btn btn-success btn-sm">List Of Employees</a>
+		&nbsp&nbsp
+	<a href="/homepage/" class="btn btn-sm btn-primary">Home page</a>
+
+
+</div>
+</div>
+{% endblock body_block %}
